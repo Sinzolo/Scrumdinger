@@ -12,6 +12,7 @@
 		AAAE8024294793AB0099DABC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAE8023294793AB0099DABC /* Assets.xcassets */; };
 		AAAE8027294793AB0099DABC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AAAE8026294793AB0099DABC /* Preview Assets.xcassets */; };
 		FA4B648B2AAD14DB004D3C52 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B648A2AAD14DB004D3C52 /* DetailView.swift */; };
+		FA4B648D2AAD2778004D3C52 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA4B648C2AAD2778004D3C52 /* DetailEditView.swift */; };
 		FAA64AC82AACAE4900B2782C /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA64AC72AACAE4900B2782C /* Theme.swift */; };
 		FAA64ACA2AACB05800B2782C /* DailyScrum.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA64AC92AACB05800B2782C /* DailyScrum.swift */; };
 		FAA64ACC2AACB13600B2782C /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA64ACB2AACB13600B2782C /* CardView.swift */; };
@@ -29,6 +30,7 @@
 		AAAE802E2947949E0099DABC /* LICENSE */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LICENSE; sourceTree = "<group>"; };
 		AAAE8030294795050099DABC /* SampleCode.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; path = SampleCode.xcconfig; sourceTree = "<group>"; };
 		FA4B648A2AAD14DB004D3C52 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		FA4B648C2AAD2778004D3C52 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		FA9184D52AACDAD3003134A1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FAA64AC72AACAE4900B2782C /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		FAA64AC92AACB05800B2782C /* DailyScrum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyScrum.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				AAAE801F294793AB0099DABC /* ScrumdingerApp.swift */,
 				FAA64ACB2AACB13600B2782C /* CardView.swift */,
 				FAA64ACF2AACB9BB00B2782C /* ScrumsView.swift */,
+				FA4B648C2AAD2778004D3C52 /* DetailEditView.swift */,
 				FA4B648A2AAD14DB004D3C52 /* DetailView.swift */,
 				AAAE8021294793AB0099DABC /* MeetingView.swift */,
 				FAA64ACD2AACB77C00B2782C /* TrailingIconLabelStyle.swift */,
@@ -181,6 +184,7 @@
 			files = (
 				FAA64ACA2AACB05800B2782C /* DailyScrum.swift in Sources */,
 				FA4B648B2AAD14DB004D3C52 /* DetailView.swift in Sources */,
+				FA4B648D2AAD2778004D3C52 /* DetailEditView.swift in Sources */,
 				FAA64ACE2AACB77C00B2782C /* TrailingIconLabelStyle.swift in Sources */,
 				FAA64AC82AACAE4900B2782C /* Theme.swift in Sources */,
 				FAA64AD02AACB9BB00B2782C /* ScrumsView.swift in Sources */,

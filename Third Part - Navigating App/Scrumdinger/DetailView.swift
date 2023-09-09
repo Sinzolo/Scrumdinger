@@ -11,13 +11,17 @@ import SwiftUI
 struct DetailView: View {
     let scrum: DailyScrum
     
+    @State private var isPresentingEditView = false
+    
     var body: some View {
         // List of scrum details
         List {
             Section(header: Text("Meeting Info")) {
-                Label("Start Meeting", systemImage: "timer")
-                    .font(.headline)
-                    .foregroundColor(.accentColor)
+                NavigationLink(destination: MeetingView()) {
+                    Label("Start Meeting", systemImage: "timer")
+                        .font(.headline)
+                        .foregroundColor(.accentColor)
+                }
                 HStack {
                     Label("Length", systemImage: "clock")
                     Spacer()
@@ -39,6 +43,30 @@ struct DetailView: View {
                 ForEach(scrum.attendees) { attendee in  // For each attendee
                     Label(attendee.name, systemImage: "person") // Add label of attendee name
                 }
+            }
+        }
+        .navigationTitle(scrum.title)
+        .toolbar {
+            Button("Edit") {
+                isPresentingEditView = true
+            }
+        }
+        .sheet(isPresented: $isPresentingEditView) {    // When isPresentingEditView is true, present the modal sheet
+            NavigationStack {
+                DetailEditView()    // Displays edit view
+                    .navigationTitle(scrum.title)
+                    .toolbar {
+                        ToolbarItem(placement: .cancellationAction) {   // Adds cancel button
+                            Button("Cancel") {
+                                isPresentingEditView = false
+                            }
+                        }
+                        ToolbarItem(placement: .confirmationAction) {   // Adds done button
+                            Button("Done") {
+                                isPresentingEditView = false
+                            }
+                        }
+                    }
             }
         }
     }

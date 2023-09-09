@@ -13,6 +13,14 @@ struct DailyScrum: Identifiable {
     var title: String
     var attendees: [Attendee]   // Array of type Attendee
     var lengthInMinutes: Int
+    var lengthInMinutesAsDouble: Double {
+        get {
+            Double(lengthInMinutes) // When lengthInMinutesAsDouble is read it uses this getter
+        }
+        set {
+            lengthInMinutes = Int(newValue) // When lengthInMinutesAsDouble is written to it uses this setter
+        }
+    }
     var theme: Theme
     
     init(id: UUID = UUID(), title: String, attendees: [String], lengthInMinutes: Int, theme: Theme) {
@@ -34,6 +42,10 @@ extension DailyScrum {
             self.id = id
             self.name = name
         }
+    }
+    
+    static var emptyScrum: DailyScrum { // Random empty scrum for edit detail view
+        DailyScrum(title: "", attendees: [], lengthInMinutes: 5, theme: .sky)
     }
 }
 
