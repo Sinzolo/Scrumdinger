@@ -71,8 +71,8 @@
 				AAAE801F294793AB0099DABC /* ScrumdingerApp.swift */,
 				FAA64ACB2AACB13600B2782C /* CardView.swift */,
 				FAA64ACF2AACB9BB00B2782C /* ScrumsView.swift */,
-				FAA64ACD2AACB77C00B2782C /* TrailingIconLabelStyle.swift */,
 				AAAE8021294793AB0099DABC /* MeetingView.swift */,
+				FAA64ACD2AACB77C00B2782C /* TrailingIconLabelStyle.swift */,
 				AAAE8023294793AB0099DABC /* Assets.xcassets */,
 				AAAE8025294793AB0099DABC /* Preview Content */,
 			);
