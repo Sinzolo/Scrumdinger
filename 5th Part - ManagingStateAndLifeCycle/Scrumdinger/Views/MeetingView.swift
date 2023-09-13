@@ -24,19 +24,31 @@ struct MeetingView: View {
             }
             .padding()
             .foregroundColor(scrum.theme.accentColor)
-            .onAppear { /// When the MeetingView is shown, reset and start the scrum timer
-                scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
-                scrumTimer.speakerChangedAction = {
-                    player.seek(to: .zero)
-                    player.play()
-                }
-                scrumTimer.startScrum()
+            .onAppear {
+                startScrum()
             }
             .onDisappear {  /// Stop scrum timer on view dissapearing
-                scrumTimer.stopScrum()
+                endScrum()
             }
             .navigationBarTitleDisplayMode(.inline)
         }
+    }
+    
+    /// Start the scrum timer and setup the ding noise action
+    private func startScrum() {
+        scrumTimer.reset(lengthInMinutes: scrum.lengthInMinutes, attendees: scrum.attendees)
+        scrumTimer.speakerChangedAction = {
+            player.seek(to: .zero)
+            player.play()
+        }
+        scrumTimer.startScrum()
+    }
+    
+    /// Stops the scrum timer and adds the scrum to the history array
+    private func endScrum() {
+        scrumTimer.stopScrum()
+        let newHistory = History(attendees: scrum.attendees)
+        scrum.history.insert(newHistory, at: 0)
     }
 }
 
