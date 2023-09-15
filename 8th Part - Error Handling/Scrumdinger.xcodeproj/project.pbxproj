@@ -25,6 +25,8 @@
 		C76970A629491AB2002748F5 /* DetailEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76970A529491AB2002748F5 /* DetailEditView.swift */; };
 		C76970A829493341002748F5 /* ThemeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76970A729493341002748F5 /* ThemeView.swift */; };
 		C76970AA29493621002748F5 /* ThemePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C76970A929493621002748F5 /* ThemePicker.swift */; };
+		FA02681B2AB4A7780012247A /* ErrorWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02681A2AB4A7780012247A /* ErrorWrapper.swift */; };
+		FA02681D2AB4A7E60012247A /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA02681C2AB4A7E60012247A /* ErrorView.swift */; };
 		FA611F5F2AB116C2003843DF /* MeetingHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA611F5E2AB116C2003843DF /* MeetingHeaderView.swift */; };
 		FAB0B07D2AB1D429006660E4 /* MeetingFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0B07C2AB1D429006660E4 /* MeetingFooterView.swift */; };
 		FAB0B07F2AB1E45C006660E4 /* NewScrumSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB0B07E2AB1E45C006660E4 /* NewScrumSheet.swift */; };
@@ -54,6 +56,8 @@
 		C76970A529491AB2002748F5 /* DetailEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailEditView.swift; sourceTree = "<group>"; };
 		C76970A729493341002748F5 /* ThemeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeView.swift; sourceTree = "<group>"; };
 		C76970A929493621002748F5 /* ThemePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemePicker.swift; sourceTree = "<group>"; };
+		FA02681A2AB4A7780012247A /* ErrorWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorWrapper.swift; sourceTree = "<group>"; };
+		FA02681C2AB4A7E60012247A /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		FA611F5E2AB116C2003843DF /* MeetingHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingHeaderView.swift; sourceTree = "<group>"; };
 		FAB0B07C2AB1D429006660E4 /* MeetingFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingFooterView.swift; sourceTree = "<group>"; };
 		FAB0B07E2AB1E45C006660E4 /* NewScrumSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewScrumSheet.swift; sourceTree = "<group>"; };
@@ -79,6 +83,7 @@
 				A9789BAF2947DF6300305A2F /* DailyScrum.swift */,
 				A93E3F3A294A6F4200B9708D /* ScrumTimer.swift */,
 				A9789BAD2947DE5100305A2F /* Theme.swift */,
+				FA02681A2AB4A7780012247A /* ErrorWrapper.swift */,
 				FAB0B0822AB34E30006660E4 /* ScrumStore.swift */,
 				FAB0B0802AB1E824006660E4 /* History.swift */,
 			);
@@ -92,6 +97,7 @@
 				C76970A529491AB2002748F5 /* DetailEditView.swift */,
 				C76970A12948F9CA002748F5 /* DetailView.swift */,
 				FAB0B07C2AB1D429006660E4 /* MeetingFooterView.swift */,
+				FA02681C2AB4A7E60012247A /* ErrorView.swift */,
 				AAAE8021294793AB0099DABC /* MeetingView.swift */,
 				FA611F5E2AB116C2003843DF /* MeetingHeaderView.swift */,
 				A93E3F38294A6F3400B9708D /* ScrumProgressViewStyle.swift */,
@@ -236,10 +242,12 @@
 				C76970AA29493621002748F5 /* ThemePicker.swift in Sources */,
 				A9789BB02947DF6300305A2F /* DailyScrum.swift in Sources */,
 				A93E3F39294A6F3400B9708D /* ScrumProgressViewStyle.swift in Sources */,
+				FA02681D2AB4A7E60012247A /* ErrorView.swift in Sources */,
 				C76970A22948F9CA002748F5 /* DetailView.swift in Sources */,
 				C76970A629491AB2002748F5 /* DetailEditView.swift in Sources */,
 				FAB0B0832AB34E30006660E4 /* ScrumStore.swift in Sources */,
 				FAB0B07D2AB1D429006660E4 /* MeetingFooterView.swift in Sources */,
+				FA02681B2AB4A7780012247A /* ErrorWrapper.swift in Sources */,
 				A9789BB52947E51500305A2F /* TrailingIconLabelStyle.swift in Sources */,
 				A9789BAE2947DE5100305A2F /* Theme.swift in Sources */,
 				FAB0B07F2AB1E45C006660E4 /* NewScrumSheet.swift in Sources */,
